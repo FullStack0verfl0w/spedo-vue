@@ -104,10 +104,19 @@ export default new Vuex.Store({
         Cart: state => {
             return state.cart;
         },
+        Currency: state => {
+            return state.currency;
+        },
     },
     mutations: {
         AddToCart(state, payload) {
-                state.cart.push(payload);
+            state.cart.push(payload);
+        },
+        ChangeCurrency(state, payload) {
+            if ( payload.name )
+                state.currency = payload.name;
+
+            console.log("Currency Changed", payload.name)
         },
     },
     actions: {

@@ -16,7 +16,7 @@
                         <h2>{{category}}</h2>
                     </div>
                     <div class="item-price">
-                        <h1>{{price}}&dollar;</h1>
+                        <h1>{{price}} {{getCurrencySign($store.getters.Currency)}}</h1>
                     </div>
                 </li>
                 <li v-if="sizes" class="info-sizes">
@@ -49,6 +49,14 @@ export default {
     methods: {
         onClick() {
             this.$store.commit("AddToCart", {name: this.name, count: 1, price: this.price});
+        },
+        getCurrencySign(currency) {
+            const signs = {
+                usd: "$",
+                rub: "₽",
+            };
+            console.log(currency);
+            return signs[currency] || "cu";
         },
     },
     components: {

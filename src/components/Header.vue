@@ -11,7 +11,7 @@
                         <ListButton :items="[
                             {title: 'USD', name: 'usd', icon: {name: 'dollar-sign'}},
                             {title: 'RUB', name: 'rub', icon: {name: 'ruble-sign'}},
-                        ]" />
+                        ]" :on-change="(item) => { $store.commit('ChangeCurrency', item) }" />
                         <li class="nav-item">
                             <div class="nav-item-icon">
                                 <font-awesome-icon icon="truck"/>
