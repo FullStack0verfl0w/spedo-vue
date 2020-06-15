@@ -38,13 +38,18 @@ export default {
     methods: {
         onClick(item) {
             this.selected = item;
+            this.onChange(item);
             this.hover = false;
         },
+    },
+    mounted() {
+        this.onChange(this.selected);
     },
     props: [
         "type",
         "items",
         "icon",
+        "onChange",
     ],
     components: {
         Button,
