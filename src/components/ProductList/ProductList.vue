@@ -86,7 +86,7 @@ export default {
                     name: "Fantastic Jeans",
                     image: require("../../assets/girls/pretty-girls07.png"),
                     category: "Summer Dress",
-                    price: 65,
+                    price: 89,
                     sizes: [
                         {value: "S"},
                         {value: "M"},
@@ -105,7 +105,7 @@ export default {
                     name: "Fantastic Beat",
                     image: require("../../assets/girls/pretty-girls08.png"),
                     category: "Wintwe Dress",
-                    price: 65,
+                    price: 45,
                     sizes: [
                         {value: "S"},
                         {value: "M"},
@@ -124,7 +124,7 @@ export default {
                     name: "Fantastic Black Dress",
                     image: require("../../assets/girls/pretty-girls09.png"),
                     category: "Party Dress",
-                    price: 65,
+                    price: 119,
                     sizes: [
                         {value: "S"},
                         {value: "M"},
@@ -143,7 +143,7 @@ export default {
                     name: "Fantastic Jeans",
                     image: require("../../assets/girls/pretty-girls010.png"),
                     category: "Summer Dress",
-                    price: 65,
+                    price: 49,
                     sizes: [
                         {value: "S"},
                         {value: "M"},
